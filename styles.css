@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-line{
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+.button-yellow{
+    background-color: #148f2a;
+    color: #fff;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+
+}
+.button-yellow:hover{
+    background-color: #063b10;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+}
+.logo img{
+    margin-right: 16px;
+    vertical-align: middle;
+}
+.nav-link{
+    color: #2c3136;
+    text-decoration: none;
+    margin: 16px;
+    font-size: 12px;
+}
+.nav-link:hover{
+    color: rgb(167, 160, 160);
+}
+.nav-link img{
+    width: 18px;
+    vertical-align: middle;
+}
+.promo-container{
+    background: linear-gradient(90deg, rgba(6,81,212,1) 0%, rgba(8,191,161,1) 100%);
+}
+.promo{
+    display: flex;
+    min-height: 368px;
+    max-width: 1024px;
+    margin: auto;
+}
+.promo div{
+    width: 50%;
+    overflow: hidden;
+}
+.promo .card{
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position: center center;
+    background-image: url('https://www.sberbank.ru/static/images/banner/2021_12/1639120680000_26183_imgUrl.png?_=1639120842877');
+    transition: all .2s;
+    min-height: 320px;
+
+}
+.promo .card:hover{
+    background-size: 140%;
+}
+.promo .text{
+    padding: 32px;
+    color: #fff;
+
+}
+.promo .text h1{
+    font-weight: 400;
+    line-height: 1.5;
+}
+.promo .text h2{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+.promo .text button{
+    background-color: transparent;
+    color: white;
+    padding: 16px 64px;
+    font-size: 16px;
+    border: solid 2px;
+    border-radius: 5px;
+}
+
+@media only screen 
+and (min-width : 300px) and (max-width : 400px) {
+    .nav-link{
+        display: none;
+    }
+    .promo{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .promo div{
+        width: 100%;
+    }
+    .promo .text{
+        padding: 16px;
+    }
+}
