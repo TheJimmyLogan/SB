@@ -2,12 +2,12 @@
 
 *{
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 .top-line{
@@ -116,6 +116,10 @@ body{
     max-width: 1024px;
 }
 
+.text-rek h4{
+    margin: 0;
+}
+
 .potreb-container{
     margin: 32px auto;
     margin-top: 0;
@@ -189,6 +193,124 @@ body{
     color: #08a652;
 }
 
+.container-foto{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.container-foto:hover{
+    color: #08a652;
+}
+
+.container-foto img{
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+.polezno-container{
+    max-width: 1024px;
+    margin: auto;
+    padding: 32px;
+}
+
+.container-foto h4{
+    font-size: 25px;
+}
+
+.text-take .h4{
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.produkt-conainer{
+    padding: 32px;
+    margin: auto;
+    max-width: 1024px;
+    padding-top: 0;
+}
+
+.produkt-conainer span{
+    color: rgb(44, 49, 54);
+    margin-right: 16px;
+
+}
+
+.produkt-conainer button{
+    background:  #148f2a;
+    color: #fff;
+    border-radius: 32px;
+    font-size: 17px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.produkt-conainer .not-active{
+    background-color: rgb(239, 243, 246);
+    color: rgb(44, 49, 54);
+}
+
+.produkt-conainer .text .left{
+    width: 60%;
+}
+
+.produkt-conainer .text .right{
+    width: 40%;
+}
+
+.produkt-conainer .text{
+    display: flex;
+    margin-top: 16px;
+    gap: 32px;
+}
+
+.produkt-conainer .text .left p{
+    color: rgba(38, 38, 38, 0.7);
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.produkt-conainer .text .left p a{
+    text-decoration: none;
+    color: #148f2a;
+
+}
+
+.produkt-conainer .text .left input{
+    width: 100%;
+    padding: 16px;
+    font-size: 21px;
+    outline: none;
+    border: rgb(219, 219, 219) solid 1px;
+}
+.produkt-conainer .text .left input:focus{
+    border-color: rgb(150, 150, 150);
+}
+
+.produkt-conainer .text .left .text-label-top{
+    color: rgb(44, 49, 54);
+    margin-bottom: 4px;
+    margin-top: 32px;
+}
+
+.produkt-conainer .text .left .text-label-bottom{
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 14px;
+}
+
+.produkt-conainer .text .left .text-label-bottom span{
+    margin: 0;
+    color: rgb(135, 139, 144);
+}
+
 
 
 @media only screen 
@@ -206,4 +328,91 @@ and (min-width : 300px) and (max-width : 400px) {
     .promo .text{
         padding: 16px;
     }
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: #148f2a;
+    border-radius: 5px;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #ffffff;
+    border: 3px solid #ffffff;
+    height: 19px;
+    width: 19px;
+    border-radius: 15px;
+    background: #148f2a;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #148f2a;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: #148f2a;
+    border-radius: 5px;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #ffffff;
+    height: 19px;
+    width: 19px;
+    border-radius: 15px;
+    background: #148f2a;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #148f2a;
+    border-radius: 15px;
+    box-shadow: 0px 0px 0px #353535;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #148f2a;
+    border-radius: 15px;
+  }
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #ffffff;
+    border: 3px solid #ffffff;
+    height: 19px;
+    width: 19px;
+    border-radius: 15px;
+    background: #148f2a;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #148f2a;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #148f2a;
+  }
+
+  .produkt-conainer .text .left .text-range{
+      display: block;
+    margin-top: -32px;
+    border: transparent;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
 }
